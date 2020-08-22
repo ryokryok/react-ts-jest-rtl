@@ -1,4 +1,4 @@
-import { sum, fibonacci } from "./sample";
+import { sum, fibonacci } from "../src/lib/sample";
 
 describe("index.ts test", () => {
   test("sum test", () => {
