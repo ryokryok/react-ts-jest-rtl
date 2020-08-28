@@ -1,5 +1,4 @@
 import App from "../src/App";
-import "@testing-library/jest-dom";
 import { screen, render, fireEvent } from "@testing-library/react";
 import React from "react";
 
@@ -11,7 +10,6 @@ describe("App components", () => {
     expect(getByText(/Sign in/)).toBeInTheDocument();
     fireEvent.click(getByText(/Sign in/));
 
-    //screen.debug();
     expect(getByText(/Welcome/)).toBeInTheDocument();
     expect(getByText(/Sign out/)).toBeInTheDocument();
     fireEvent.click(getByText(/Sign out/));
